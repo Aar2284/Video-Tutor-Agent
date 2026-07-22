@@ -2,11 +2,9 @@
 # ENVIRONMENT & SECRETS
 # ════════════════════════════════
 .env
-.env.*
 .env.local
 .env.production
 .env.staging
-!.env.example          # Keep the example template
 
 # ════════════════════════════════
 # PYTHON
@@ -90,6 +88,7 @@ great_expectations/uncommitted/
 .DS_Store
 Thumbs.db
 desktop.ini
+Screenshot*.png
 
 # ════════════════════════════════
 # IDE
@@ -98,3 +97,5 @@ desktop.ini
 .idea/
 *.swp
 *.swo
+
+rd.md
