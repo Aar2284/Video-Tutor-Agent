@@ -172,6 +172,7 @@ function clearChat() {
     urlInput.value = '';
     questionInput.disabled = true;
     askBtn.disabled = true;
+    micBtn.disabled = true;
     clearBtn.disabled = true;
     transcriptInfo.style.display = 'none';
     statusBar.style.display = 'none';
