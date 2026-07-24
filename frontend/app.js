@@ -202,7 +202,6 @@ async function toggleMic() {
         audioChunks = [];
 
         micBtn.classList.add('recording');
-        addMessage('user', 'Recording... speak now');
 
         mediaRecorder.ondataavailable = (e) => audioChunks.push(e.data);
         mediaRecorder.onstop = async () => {
@@ -226,7 +225,7 @@ async function toggleMic() {
                     typingEl.remove();
                     if (data.text && data.text.trim()) {
                         questionInput.value = data.text;
-                        addMessage('user', `[Voice] ${data.text}`);
+                        questionInput.focus();
                     } else {
                         addMessage('assistant', 'Could not understand the audio. Please try again.');
                     }
